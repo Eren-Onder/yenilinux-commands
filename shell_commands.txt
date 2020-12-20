@@ -1,0 +1,71 @@
+$ pwd
+
+
+$ ls -a
+  
+
+$ mkdir eren
+
+
+$ touch eren.txt
+
+
+$ cp eren.txt eren
+
+
+$ cd eren
+
+
+$ ls
+eren.txt
+
+User@DESKTOP-IIIAC60 MINGW64 ~/eren
+$ .. cd
+bash: ..: command not found
+
+User@DESKTOP-IIIAC60 MINGW64 ~/eren
+$ cd ..
+
+User@DESKTOP-IIIAC60 MINGW64 ~
+$ rmdir eren.txt
+rmdir: failed to remove 'eren.txt': Not a directory
+
+User@DESKTOP-IIIAC60 MINGW64 ~
+$ rm -r eren.txt
+
+User@DESKTOP-IIIAC60 MINGW64 ~
+$ cd eren
+
+User@DESKTOP-IIIAC60 MINGW64 ~/eren
+$ ls
+eren.txt
+
+User@DESKTOP-IIIAC60 MINGW64 ~/eren
+$ echo "Birinci dosya temel shell komutları" >> eren.txt
+
+User@DESKTOP-IIIAC60 MINGW64 ~/eren
+$ cat eren.txt
+Birinci dosya temel shell komutları
+
+User@DESKTOP-IIIAC60 MINGW64 ~/eren
+$ grep shell eren.txt
+Birinci dosya temel shell komutları
+
+User@DESKTOP-IIIAC60 MINGW64 ~/eren
+$ touch eren2.txt
+
+User@DESKTOP-IIIAC60 MINGW64 ~/eren
+$ echo "ikinci dosya disk islemleri" >> eren2.txt
+
+User@DESKTOP-IIIAC60 MINGW64 ~/eren
+$ cat eren.txt eren2.txt >> eren3.txt
+
+User@DESKTOP-IIIAC60 MINGW64 ~/eren
+$ cd ..
+
+User@DESKTOP-IIIAC60 MINGW64 ~
+$ rm -r eren
+
+User@DESKTOP-IIIAC60 MINGW64 ~
+$ pwd
+/c/Users/User
